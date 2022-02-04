@@ -1,0 +1,270 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face  {
+    font-family: PoppinsBold;
+    src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: CourgetteRegular;
+    src: url(../font/Courgette/Courgette-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    font-family: poppinsRegular;
+    letter-spacing: 1px;
+}
+/* Pembuka Header */
+.boxHeader {
+    background-color: #0b4057;
+    overflow: hidden;
+    height: 70px;
+    padding: 0pc 30px;
+}
+
+.boxHeader .boxLogo {
+    display: inline-block;
+    padding: 8px;
+}
+
+.boxHeader .boxLogo p {
+    margin: 0px;
+}
+
+.boxHeader .boxLogo img {
+    width: 50px;
+    height: 50px;
+}
+
+.boxHeader .boxMenu {
+    float: right;
+    padding: 20px;
+}
+
+.boxHeader .boxMenu ul {
+    display: block  ;
+    margin: 0px;
+    padding: 0px;
+}
+
+.boxHeader .boxMenu ul li {
+    display: inline-block;
+    letter-spacing: 3px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.8s; 
+    position: relative;
+}
+
+.boxHeader .boxMenu ul li:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2.5px;
+    bottom: -5px;
+    left: 0;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.boxHeader .boxMenu ul li:hover:after {
+    width: 100%;
+    height: 2.5px;
+    background-color: white;
+    transition: 0.8s;
+    border-radius: 100px;
+}
+/* Penutup Header */
+
+/* Pembuka Banner */
+.boxBanner {
+    height: 75vh;
+    background-image: url(../image/backgroundProfile.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+.boxBanner:after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.boxBanner .boxImage {
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    left: 0px;
+    top: 150px;
+    background-image: url(../image/bintang.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.boxBanner .boxContent .name {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 170px;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.boxBanner .boxContent .headline {
+    text-align: center;
+    z-index: 1;
+    color: white;
+    position: relative;
+    top: 190px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+/* Penutup Banner */
+
+/* Pembuka About */
+.boxAbout {
+    padding: 60px 0px;
+}
+
+.boxAbout .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: poppinsBold;
+}
+
+.boxAbout .description {
+    width: 30%;
+    margin: auto;
+    font-size: 18px;
+}
+/* Penutup About */
+
+/* Pembuka portofolio */
+.sectionPortofolio {
+    padding: 0px 30px;
+}
+
+.sectionPortofolio .title {
+    text-align: center;
+    text-transform: uppercase   ;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: poppinsBold;
+}
+
+.sectionPortofolio .boxContent .boxGrid {
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 50px;
+    transition: 0.8s;
+}
+
+.sectionPortofolio .boxContent .boxGrid:hover {
+    transform: translateY(-10px);
+    transition: 0.8s;
+}
+
+.sectionPortofolio .boxContent .boxGrid:last-child {
+    margin-right: 0px;
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxImage {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxImage.image1 {
+    background-image: url(../image/bukalapak.png);
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxImage.image2 {
+    background-image: url(../image/tokopedia.jpg);
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxImage.image3 {
+    background-image: url(../image/lazada.jpg);
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxDescription {
+    padding: 10px 0px;
+}
+
+.sectionPortofolio .boxContent .boxGrid .boxDescription p {
+    margin: 0px;
+    text-align: center;
+}
+/* penutup Portofolio */
+
+/* pembuka Box Content me */
+.sectionContactMe {
+    padding: 60px 30px;
+}
+
+.sectionContactMe .title {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: poppinsBold;
+}
+
+.sectionContactMe .boxContentFlex {
+    display: flex;
+    padding: 20px;
+}
+
+.sectionContactMe .boxContentFlex .boxItem {
+    padding: 0px 20px;
+    flex: 0 0 50%;
+}
+
+.sectionContactMe .boxContentFlex .boxItem .boxAddress .textAddress {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.sectionContactMe .boxContentFlex .boxItem .boxAddress .textAddress span {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.sectionContactMe .boxContentFlex .boxItem .boxAddress .map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sectionContactMe .boxContentFlex .boxItem .boxAddress .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
